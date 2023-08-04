@@ -1,4 +1,4 @@
-# Docker setUp with react project
+# Docker setUp with react projects
 
 ## docker file
     FROM node:18 //-- docker image name [node 18]

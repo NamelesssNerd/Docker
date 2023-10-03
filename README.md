@@ -15,6 +15,11 @@ CMD [ "yarn","run","dev" ]  | Entry point for docker container
 Commands | Descriptions 
 --- | ---
 docker run ubuntu | Pull the ubuntu image and make a container with default name
+docker pull <image> | downloads an image from a registry. Example: docker pull ubuntu
+docker build <path> | builds an image from a Dockerfile. Example: docker build.
+docker tag <image> <repository>:<tag> | tags an image with a repository and tag. Example: docker tag my-image my-repo:1.0
+docker push <repository>:<tag> | pushes an image to a registry. Example: docker push my-repo:1.0
+docker rmi <image> | removes an image. Example: docker rmi my-image
 docker image prune -a | remove all the unused docker images
 docker inspect <image_id> | gives the information about the installed docker image having the current image_id
 docker image rm <image_id> | remmoving the docker image with given image_id
@@ -25,11 +30,25 @@ docker run --rm --name conatiner-name -d -p source-port:destination-port image-n
 docker run --rm --name container-name -d -p source-por:destination-port -v $(pwd):/app image-name |  accessing the docker image from outsidde it and auto sync when any change is happened
 docker stop image-name or <image_id> | stop the relevent docker image
 
+
+
 ### Docker container CLI
 Commands | Descriptions 
 --- | ---
 docker container ls --all | List all the docker running container
 docker excute <container_name> <your_command> | run the command inside the docker container without intering inside it<br>eg: docker excute sushant mkdir newFolder
+docker run <image> | creates and starts a container based on the specified image. Example: docker run nginx
+docker start <container> | starts a stopped container. Example: docker start my-container
+docker stop <container> | stops a running container. Example: docker stop my-container
+docker rm <container> |  removes a stopped container. Example: docker rm my-container 
+docker ps | lists all running containers. Example: docker ps
+docker ps -a | lists all containers, including stopped ones. Example: docker ps -a
+docker logs <container> | displays the logs of a container. Example: docker logs my-container
+
+
+
+
+
 
 
 

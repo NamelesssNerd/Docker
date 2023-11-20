@@ -50,6 +50,7 @@ docker volume rm <volume_name> | remove the related docker volume
 docker run -it -P <Image> | Automatic port mapping Note: add <code> Expose <your_port> </code> into the Dockerfile eg:3000
 docker tag <your_image> <custome_name> | giving the the custom tag name to the docker image
 docker push <Your_image> | pushing the docker image into Docker hub
+docker run -it -v /yourPath:/home/app ubuntu | attaching the host volume
 
 
 

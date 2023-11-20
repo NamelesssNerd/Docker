@@ -51,7 +51,9 @@ docker run -it -P <Image> | Automatic port mapping Note: add <code> Expose <your
 docker tag <your_image> <custome_name> | giving the the custom tag name to the docker image
 docker push <Your_image> | pushing the docker image into Docker hub
 docker run -it -v /yourPath:/home/app ubuntu | attaching the host volume
-
+docker compose up | make ready numbers of containers at a time <code>Note: create docker-compose.yml file</code>
+docker compose down | Killing all the composed container <code>Note: Docker composed into the stack </code>
+docker compose up -d | compose all the caontainer and run it in background mode. <code>Note: other service can be used at same time</code>
 
 
 

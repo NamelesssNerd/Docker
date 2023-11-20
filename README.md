@@ -47,7 +47,10 @@ docker ps -a | lists all containers, including stopped ones. Example: docker ps 
 docker logs <container> | displays the logs of a container. Example: docker logs my-container
 docker volume ls | list all the available docker volume
 docker volume rm <volume_name> | remove the related docker volume
-docker run -it -p <Image> | Automatic port mapping Note: add <code> Expose <your_port> </code> into the Dockerfile eg:3000
+docker run -it -P <Image> | Automatic port mapping Note: add <code> Expose <your_port> </code> into the Dockerfile eg:3000
+docker tag <your_image> <custome_name> | giving the the custom tag name to the docker image
+docker push <Your_image> | pushing the docker image into Docker hub
+
 
 
 

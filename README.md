@@ -45,8 +45,9 @@ docker rm <container> |  removes a stopped container. Example: docker rm my-cont
 docker ps | lists all running containers. Example: docker ps
 docker ps -a | lists all containers, including stopped ones. Example: docker ps -a
 docker logs <container> | displays the logs of a container. Example: docker logs my-container
-
-
+docker volume ls | list all the available docker volume
+docker volume rm <volume_name> | remove the related docker volume
+docker run -it -p <Image> | Automatic port mapping Note: add <code> Expose <your_port> </code> into the Dockerfile eg:3000
 
 
 

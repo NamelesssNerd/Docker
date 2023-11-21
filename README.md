@@ -1,7 +1,6 @@
 <img src="https://profile-counter.glitch.me/NamelesssNerd/count.svg" />
 # Docker setUp with react projectsssss
 ## sample docker file [Dockerfile]
-
 command | descriptions
 --- | ---
 FROM node:18 | Pull the nodejs docker image from dockerhub
@@ -11,6 +10,22 @@ RUN yarn install | installing required dependencies into the docker container
 COPY . .  | copy all the file and folder from local to docker container home or working directory
 CMD [ "yarn","run","dev" ]  | Entry point for docker container 
 
+
+### Configuration <code>vite.config.js </code>
+#### <code> Note: Needed only with vite</code>
+```
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    host: true, // Here
+    strictPort: true,
+    port: 3000,
+  }
+})
+```
 
 ### Docker image CLI
 Commands | Descriptions 

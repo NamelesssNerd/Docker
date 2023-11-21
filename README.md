@@ -28,7 +28,7 @@ docker image rm <image_id> | remmoving the docker image with given image_id
 docker image ls ,docker images | list all the running docker images
 docker build -t testreact-image location-path  [if same file write only .] | building the docker image
 docker run --name  container-name --rm image-name | running the docker image with custome name
-docker run --rm --name conatiner-name -d -p source-port:destination-port image-name | accessing the docker image from outsidde it
+docker run --rm --name conatiner-name -d -p source-port:destination-port image-name | accessing the docker image from outsidde it <code> docker run --rm --name docker-test-container -it -p 3000:3000 docker-test-image </code>
 docker run --rm --name container-name -d -p source-por:destination-port -v $(pwd):/app image-name |  accessing the docker image from outsidde it and auto sync when any change is happened
 docker stop image-name or <image_id> | stop the relevent docker image
 

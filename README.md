@@ -15,6 +15,7 @@ CMD [ "yarn","run","dev" ]  | Entry point for docker container
 ### Docker image CLI
 Commands | Descriptions 
 --- | ---
+docker search <image_name> | Search docker image in docker hub <code> Eg: ubuntu </code>
 docker run ubuntu | Pull the ubuntu image and make a container with default name
 docker pull <image> | downloads an image from a registry. Example: docker pull ubuntu
 docker build <path> | builds an image from a Dockerfile. Example: docker build.

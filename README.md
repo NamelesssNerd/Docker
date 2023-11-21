@@ -1,6 +1,6 @@
 <img src="https://profile-counter.glitch.me/NamelesssNerd/count.svg" />
-# Docker setUp with react projectsssss
-## sample docker file [Dockerfile]
+# Docker setUp with react project: <code> create Dockerfile</code>
+
 command | descriptions
 --- | ---
 FROM node:18 | Pull the nodejs docker image from dockerhub

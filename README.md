@@ -1,4 +1,3 @@
-<img src="https://profile-counter.glitch.me/NamelesssNerd/count.svg" />
 # Docker setUp with react project: <code> create Dockerfile</code>
 
 command | descriptions
